@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body { 
+    font-family: "Merriweather";
+    margin: 0;
+    background-color: #fffbf4;
+    color: black;
+}
+
+/*Website Links except the nav*/
+a:link {
+    color: #b300b3
+}
+
+a:visited {
+    color: #b300b3
+}
+
+a:hover {
+    color: blue;
+}
+    
+a:active {
+    color: black;
+}
+
+header {
+    text-align: center;
+    background-color: #13426d;
+    height: 100px;
+}
+
+/*Navigation */
+nav {
+    background-color: #858585;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 8px 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link{
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+nav a:active {
+    color: Black;
+}
+
+/*Main*/
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #b98877;
+    margin-bottom: -4px;
+}
+
+footer .top-half {
+    background-color: #858585;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+footer .bottom-half {
+    color: white;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.hero {
+    background-image: url(images/hero.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero.north-shore {
+    background-image: url(images/north_shore/duluth.jpg);
+}
+
+.description > .icon {
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+}
+
+.description {
+    margin-top: 20px;
+    background-color: #F1DEDE;
+    margin-bottom: 1em;
+}
+
+.description-text {
+    padding-top: 1em;
+}
+
+.center-margin {
+    margin: 0 auto;
+}
+
+.right {
+    text-align: end;
+}
+
+/* Classes to make gallery work */
+.gallery .preview{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+}
+
+.gallery img {
+    border: 1px solid #545643;
+    padding: 0;
+    box-shadow: #545643 5px 5px 10px;
+}
+
+.gallery .gallery-thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+    font-size: 4em;
+}
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+h1{
+    font-size: 1.8em;
+}
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+h1{
+    font-size: 1.5em;
+}
+}
