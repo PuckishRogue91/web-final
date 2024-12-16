@@ -18,6 +18,7 @@ a:visited {
 
 a:hover {
     color: blue;
+    text-decoration: none;
 }
     
 a:active {
@@ -63,7 +64,8 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: darkred;
+    color: #08a8f0;
+    text-decoration: none;
 }
 
 nav a:active {
@@ -79,21 +81,26 @@ main {
 
 /* Footer */
 footer {
-    background-color: #b98877;
+    background-color: #08a8f0;
     margin-bottom: -4px;
 }
 
 footer .top-half {
-    background-color: #858585;
+    background-color: #13426d;
     padding-top: 1em;
     padding-bottom: 0.5em;
     text-align: center;
+    color: white;
 }
 
 footer .bottom-half {
-    color: white;
+    color: black;
     margin: 5px 0;
     text-align: center;
+}
+
+footer a:link {
+    color: white;
 }
 
 .hero {
@@ -149,6 +156,8 @@ footer .bottom-half {
     width: 100px;
     height: 75px;
     margin: 3px 10px 10px 0;
+    object-fit: cover;
+    background-color: black;
 }
 
 .gallery .gallery-thumbnails img:hover {
@@ -161,6 +170,10 @@ footer .bottom-half {
     height: auto;
     margin: 0 auto !important;
     display: block !important;
+    
+    /* Lock image height to prevent page jumping */
+    height: 600px;
+    max-height: 600px;
 }
 
 /*CSS without a media query--applies to all sizes unless overridden*/
